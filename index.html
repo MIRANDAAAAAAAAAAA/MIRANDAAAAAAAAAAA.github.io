@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .welcome-section {
+            height: 100vh;
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 2em;
+        }
+        .projects {
+            padding: 50px;
+            text-align: center;
+        }
+        .project-tile {
+            margin: 20px;
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .social-media {
+            padding: 50px;
+            text-align: center;
+        }
+        .profile-section {
+            padding: 50px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .welcome-section {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#welcome-section">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#social-media">Contact</a>
+    </nav>
+    <section id="welcome-section" class="welcome-section">
+        <h1>Hi, I'm [Your Name], a Future Developer!</h1>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-tile">
+            <a href="#">My Cool Project</a>
+        </div>
+    </section>
+    <section id="social-media" class="social-media">
+        <h2>Social Media</h2>
+        <a href="https://github.com">GitHub</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://www.codewars.com/">CodeWars</a>
+    </section>
+    <section class="profile-section">
+        <h2>About Me</h2>
+        <p>This is my journey in coding...</p>
+    </section>
+</body>
+</html>
